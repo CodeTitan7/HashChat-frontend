@@ -4,9 +4,16 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 import Chat from "./components/Chat";
 
+const API_URL = import.meta.env.VITE_API_URL
+
 export default function App() {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch(`${API_URL}/health`)
+      .catch(() => {});
+  }, []);
   
   useEffect(() => {
     const restoreUser = async () => {
