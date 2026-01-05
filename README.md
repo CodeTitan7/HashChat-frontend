@@ -1,16 +1,62 @@
-# React + Vite
+# HashChat - Real-Time Messaging Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack messaging platform built with the MERN stack (MongoDB, Express, React, Node.js) and Socket.IO for real-time communication.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- URL: https://hashchat-live.vercel.app
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- User authentication with JWT
+- Real-time messaging using WebSocket
+- User search by username
+- Persistent chat history
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Frontend:**
+- React 19
+- Vite
+- Socket.IO Client
+- Axios
+- React Router
+
+**Backend:**
+- Node.js
+- Express
+- MongoDB with Mongoose
+- Socket.IO
+- JWT for authentication
+- bcryptjs for password hashing
+
+## Usage
+
+1. Register a new account with username, email, and password
+2. Login with your credentials
+3. Search for other users by username
+4. Start chatting in real-time
+5. Your chat history is saved and will load when you reconnect
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/NewFeature`)
+3. Commit your changes (`git commit -m 'Add NewFeature'`)
+4. Push to the branch (`git push origin feature/NewFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License.
+
+## Author
+
+**CodeTitan7**
+- GitHub: [@CodeTitan7](https://github.com/CodeTitan7)
+
+## Acknowledgments
+
+- Socket.IO for real-time communication
+- MongoDB for database
+- Vercel and Render for hosting
